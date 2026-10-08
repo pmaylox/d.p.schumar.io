@@ -1,7 +1,8 @@
 # Website contact forms: Google Sheets and Slack
 
-Status: code prepared; receiver deployment and Slack webhook setup are still required.
-The website submit buttons stay disabled until a real endpoint URL is configured.
+Status: receiver deployed, Slack webhook configured privately, and local forms enabled.
+Live endpoint tests for Phil and DJ saved rows and delivered notifications to #all-dpschumar on October 8, 2026.
+The GitHub pull request remains a draft pending testing in VS Code and website deployment.
 
 ## Response storage
 Google Sheet: https://docs.google.com/spreadsheets/d/1W5pkNejGyI-ajSckzGUPJF1UW-WBlX_p4EhgQLd2lfk/edit
@@ -58,7 +59,8 @@ Repeat the same submission without editing it: the same submission ID should pro
 - Native form POST opens a separate confirmation tab and avoids cross-origin AJAX limitations.
   The original page never claims successful storage without that server confirmation.
 - Changing server code requires a new deployment version in Apps Script.
-- No live website submission or Slack notification has been tested yet.
+- Public endpoint POST tests for Phil and DJ succeeded; both Sheet rows show Sent and both Slack notifications were verified.
+- Browser interaction with the local form pages still needs user verification in VS Code.
 
 References:
 https://developers.google.com/apps-script/guides/web
