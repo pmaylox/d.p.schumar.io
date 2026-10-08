@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Starter Template</title>
+    <!-- Link to an external CSS stylesheet -->
     <link rel="stylesheet" href="css/style.css">
-    <title>Hello World</title>
 </head>
 <body class="contact-page">
     <header class="site-header" style="font-family: 'MedievalSharp', 'Cinzel Decorative', cursive;">
@@ -36,23 +36,24 @@
         </nav>
     </div>
 </header>
+<main>
+    <p>Please fill out the form below to contact Coach DJ.</p>
+    <form id="contact-form">
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first-name" autocomplete="given-name" required>
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last-name" autocomplete="family-name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" autocomplete="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Submit</button>
+        <p id="contact-form-status" role="status">Message sending is not enabled yet. This form only checks your entries.</p>
+    </form>
+</main>>
 
-   <div id="content"></div>
-   <h4 style="text-align: center;">If you would like to contact either <strong>DJ</strong> or <strong>Phil</strong>, please click on the appropriate button.</h4>
-   <div class="contact-buttons">
-       <a href="contactphil.html" class="sprite-link phil" aria-label="Contact Phil">
-           <span>Contact</span>
-           <img src="images/sprites/Phil/miniMe-front-walking.gif" alt="" width="320" height="420">
-           <strong>Phil</strong></a>
-       <a href="contactdj.html" class="sprite-link coachdj" aria-label="Contact DJ">
-           <span>Contact</span>
-           <img src="images/sprites/coachdj-bowling.gif" alt="" width="560" height="560">
-           <strong>DJ</strong></a>
-   </div>
-
-   <footer>
+    <footer>
         <p style="color:blue;">&copy; Copyright:2026 D.P. ent. All Rights Reserved</p>
     </footer>
 </body>
-   <script src="xxxxxx"></script>
 </html>
