@@ -206,6 +206,33 @@ body.contact-page .construction-notice p {
     margin: 0;
 }
 
+body.contact-page main.contact-form-content {
+    grid-template-columns: minmax(0, 1fr);
+    text-indent: 0;
+}
+
+body.contact-page #contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    min-width: 0;
+    text-indent: 0;
+}
+
+body.contact-page .contact-form-content #contact-form input {
+    width: min(100%, 320px);
+}
+
+body.contact-page .contact-form-content #contact-form textarea {
+    width: min(100%, 480px);
+    min-height: 180px;
+    resize: vertical;
+}
+
+body.contact-page #contact-form button[type="submit"] {
+    align-self: flex-start;
+}
+
 body > footer,
 body > section,
 body > h4,
