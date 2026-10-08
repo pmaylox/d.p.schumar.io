@@ -36,6 +36,8 @@ If your Google organization prevents public web apps, a different server host wi
 ## 3. Enable the website
 Set window.CONTACT_FORM_ENDPOINT in javascript/contact-config.js to the deployed /exec URL.
 Leave all other credentials out of the repository.
+Both Submit buttons start disabled and are enabled by the shared form script when the endpoint URL is valid.
+Keep the `contact-form-status` element on both pages; the script uses it for setup and validation messages.
 Then merge the website change and let your hosting deployment complete.
 
 ## 4. Verify before launch

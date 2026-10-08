@@ -11,6 +11,7 @@
 
     if (enabled) {
         form.action = endpoint;
+        button.disabled = false;
         status.textContent = "Submitting opens a confirmation in a new tab.";
     } else {
         button.disabled = true;
