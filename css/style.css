@@ -82,6 +82,37 @@ header {
     box-shadow: 0 4px 12px rgb(47 22 65 / 20%);
 }
 
+body.coach-page .title-row {
+    gap: 0.25rem;
+    row-gap: 0.125rem;
+}
+
+body.coach-page .title-row > h1#grad {
+    align-self: end;
+    height: clamp(2.5rem, 8vw, 4.5rem);
+    overflow: hidden;
+    padding: 0;
+}
+
+body.coach-page .title-row > h1 .welcome-banner {
+    height: 100%;
+    object-fit: cover;
+    object-position: center 45%;
+}
+
+body.coach-page .title-center {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.main-nav .nav-sprite {
+  width: 400px;
+  height: auto;
+}
+
 @media (max-width: 480px) {
     .title-row {
         grid-template-columns: 1fr 1fr;
@@ -129,40 +160,7 @@ body {
     color: #333;
 }
 body.home-page,
-body.about-page {
-    background-color: #f3ead7;
-}
-body.about-page main {
-    display: block;
-    width: 100%;
-}
 
-body.about-page main p {
-    max-width: 100%;
-    width: 100%;
-}
-body.about-page main {
-    display: block;
-    width: 100%;
-    padding: 20px 0;
-}
-
-body.about-page footer .time-panel {
-    width: min(100% - 30px, 600px);
-    margin: 0 auto 4px;
-    padding: 0;
-    text-align: center;
-}
-
-body.about-page footer .time-panel p {
-    display: inline;
-    margin: 0 8px;
-    font-variant-numeric: tabular-nums;
-}
-
-body.about-page section {
-    overflow: hidden;
-}
 
 body.contact-page .title-row {
 
@@ -585,6 +583,11 @@ body > p:first-of-type {
 
 .sprite-link.home::before {
     background-image: url("../images/sprites/house.png");
+}
+
+body.coach-page .sprite-link.house {
+    padding: 2px;
+    margin-top: -60px;
 }
 
 .sprite-link.music::before {
