@@ -1,1 +1,9 @@
-# d.p.schumar.io
+# d.p.schumar.io 
+# Things todo:
+  # get DJ collaborating, even if he can't code right now we can share idea back and forth as time permits.
+  # Flesh out the pages more.
+    # index.html needs text
+    # all pages need the growing header with links (copy & paste)
+    # Keep generating sprites as needed
+    
+    
