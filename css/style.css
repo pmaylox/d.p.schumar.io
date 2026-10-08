@@ -108,6 +108,10 @@ body.coach-page .title-center {
     gap: 0.25rem;
 }
 
+body.coach-page .title-center .golf-swing {
+    width: clamp(40px, calc(10vw - 20px), 80px);
+}
+
 .main-nav .nav-sprite {
   width: 400px;
   height: auto;
