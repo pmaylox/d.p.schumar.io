@@ -46,7 +46,7 @@ header {
     align-items: center;
 }
 
-.title-row h1 {
+.title-row #grad {
     min-width: 0;
     margin: 0;
 }
@@ -81,11 +81,16 @@ header {
     border-radius: 12px;
     box-shadow: 0 4px 12px rgb(47 22 65 / 20%);
 }
-body.phil-page .title-row > h1#grad {
+body.phil-page .title-row > #grad {
     align-self: end;
     height: clamp(2.5rem, 8vw, 4.5rem);
     overflow: hidden;
     padding: 0;
+}
+body.phil-page .title-row > #grad .welcome-banner {
+    height: 100%;
+    object-fit: cover;
+    object-position: center 45%;
 }
 
 body.phil-page .title-center {
@@ -101,14 +106,14 @@ body.coach-page .title-row {
     row-gap: 0.125rem;
 }
 
-body.coach-page .title-row > h1#grad {
+body.coach-page .title-row > #grad {
     align-self: end;
     height: clamp(2.5rem, 8vw, 4.5rem);
     overflow: hidden;
     padding: 0;
 }
 
-body.coach-page .title-row > h1 .welcome-banner {
+body.coach-page .title-row > #grad .welcome-banner {
     height: 100%;
     object-fit: cover;
     object-position: center 45%;
@@ -136,7 +141,7 @@ body.coach-page .title-center .golf-swing {
         grid-template-columns: 1fr 1fr;
     }
 
-    .title-row h1 {
+    .title-row #grad {
         grid-column: 1 / -1;
         grid-row: 2;
         font-size: 1.5rem;
@@ -312,6 +317,21 @@ main {
     text-indent: 20px;
 }
 
+body.phil-page main.phil-content {
+    display: block;
+    text-indent: 0;
+}
+
+body.phil-page .phil-intro {
+    color: #8B0000;
+    text-align: center;
+}
+
+body.phil-page .phil-intro ~ * {
+    text-align: left;
+    text-indent: 2em;
+}
+
 body.home-page main {
 }
 
@@ -396,26 +416,6 @@ section {
 }
 /* End IMG */
 
-
-.bio-copy {
-    margin: 0;
-    flex: 1;
-}
-
-.bio-section {
-  display: flex;
-  align-items: flex-start;
-  gap: 1rem;
-}
-
-.phil-photo {
-    width: 250px;
-  flex-shrink: 0;
-}
-
-.bio-text {
-  flex: 1;
-}
 /* carousel */
 #featured-blends .carousel-item img {
     width: 70%;
@@ -449,13 +449,21 @@ section {
 a:hover {
     text-decoration: underline;
 }
-
-
+ 
+/* Begin font Styles */
+.gothic-title {
+  font-family: "UnifrakturCook", cursive;
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+  color:#4A0E1C;
+}
+/*End font styles */
 .main-nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    list-style: none;
+    list-style: none; 
     padding: 0;
     margin: 0;
     gap: 0.75rem;
@@ -496,11 +504,12 @@ a:hover {
 
 /* ===== Button Link ===== */
 .button {
+    border-radius: 15px;
     display: inline-block;
-    background-color: #0055aa;
-    color: white;
+    background-color: violet;
+    color: blue;
     padding: 0.5rem 1rem;
-    border-radius: 4px;
+    box-shadow: 3px 3px 5px gray;
 }
 
 .container {
