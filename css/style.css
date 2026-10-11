@@ -518,7 +518,17 @@ a:hover {
     padding: 0 15px;
     max-width: 100%;
     box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
 }
+
+@media (max-width: 600px) {
+  .columns {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* making grandkids.html images stack */
 
 main.gallery {
@@ -616,6 +626,35 @@ body > p:first-of-type {
     align-self: center;
     width: 48px;
     height: auto;
+}
+
+@media (max-width: 600px) {
+    .main-nav ul {
+        flex-wrap: nowrap;
+        gap: 0.25rem;
+    }
+
+    .main-nav li {
+        flex: 1 1 0;
+        min-width: 0;
+    }
+
+    .sprite-link {
+        width: 100%;
+        min-width: 0;
+        padding: 8px 2px;
+        font-size: 0.7rem;
+    }
+
+    .sprite-link.phil img,
+    .sprite-link.coachdj img {
+        width: 40px;
+    }
+
+    .sprite-link.contact::before {
+        width: 48px;
+        height: 40px;
+    }
 }
 
 body.contact-page .contact-buttons .sprite-link.phil,
